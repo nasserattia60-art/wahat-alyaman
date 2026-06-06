@@ -1,0 +1,1271 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="مطعم واحة اليمن - أصالة المذاق اليمني والمصري في قلب القاهرة. فروعنا في الشيخ زايد والمهندسين. اطلب الآن عبر واتساب." />
+    <meta
+      name="keywords"
+      content="مطعم يمني,مندي,مدبي,زربيان,مطعم القاهرة,واحة اليمن,الشيخ زايد,المهندسين,مشويات" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#5C3317" />
+    <meta property="og:title" content="مطعم واحة اليمن – أصالة المذاق" />
+    <meta
+      property="og:description"
+      content="تجربة طعام يمنية ومصرية فريدة في قلب القاهرة" />
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:locale" content="ar_EG" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1567529692333-de9fd6772897?w=1200" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "مطعم واحة اليمن - فرع الشيخ زايد",
+          "servesCuisine": ["Yemeni", "Egyptian"],
+          "priceRange": "$$",
+          "currenciesAccepted": "EGP",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "الشيخ زايد",
+            "addressRegion": "الجيزة",
+            "addressCountry": "EG"
+          },
+          "telephone": "+201000000001",
+          "url": "https://wahat-alyaman.com",
+          "openingHours": "Mo-Su 12:00-01:00",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "1200"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "مطعم واحة اليمن - فرع المهندسين",
+          "servesCuisine": ["Yemeni", "Egyptian"],
+          "priceRange": "$$",
+          "currenciesAccepted": "EGP",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "المهندسين",
+            "addressRegion": "الجيزة",
+            "addressCountry": "EG"
+          },
+          "telephone": "+201000000002",
+          "url": "https://wahat-alyaman.com",
+          "openingHours": "Mo-Su 12:00-01:00",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "1200"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "كيف يمكنني الطلب؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "الطلب عبر واتساب مباشرة — اضغط على زر اطلب الآن"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "هل يتوفر توصيل؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "نعم، للمناطق المحيطة بفرعينا في الشيخ زايد والمهندسين"
+              }
+            }
+          ]
+        }
+      ]
+    </script>
+    <title>مطعم واحة اليمن | أصالة المذاق اليمني والمصري</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ─── BRANCH SELECTOR POPUP ─── -->
+    <div id="branchPopup">
+      <div class="branch-popup-box">
+        <div class="branch-popup-header">
+          <div class="branch-popup-logo">واحة اليمن</div>
+          <div class="branch-popup-subtitle">Wahat Al-Yaman Restaurant</div>
+          <div class="branch-popup-title">اختر الفرع الأقرب إليك</div>
+          <p
+            style="
+              font-size: 13px;
+              color: rgba(255, 255, 255, 0.65);
+              margin-top: 4px;
+            ">
+            ستتغير الأسعار والعروض والواتساب تلقائيًا
+          </p>
+        </div>
+        <div class="branch-popup-body">
+          <div class="branch-opt" onclick="selectBranchPopup('zayed', this)">
+            <div class="branch-opt-live">
+              <span class="live-dot"></span>متاح الآن
+            </div>
+            <div class="branch-opt-icon">🏢</div>
+            <div>
+              <div class="branch-opt-name">فرع الشيخ زايد</div>
+              <div class="branch-opt-addr">الحي الثامن، الشيخ زايد، الجيزة</div>
+            </div>
+            <div class="branch-opt-arr">←</div>
+          </div>
+          <div
+            class="branch-opt"
+            onclick="selectBranchPopup('mohandessin', this)">
+            <div class="branch-opt-live">
+              <span class="live-dot"></span>متاح الآن
+            </div>
+            <div class="branch-opt-icon">🏙️</div>
+            <div>
+              <div class="branch-opt-name">فرع المهندسين</div>
+              <div class="branch-opt-addr">
+                شارع جامعة الدول العربية، الجيزة
+              </div>
+            </div>
+            <div class="branch-opt-arr">←</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── HEADER ─── -->
+    <header id="hdr" class="transparent">
+      <div class="hdr-inner">
+        <div class="logo">
+          <span class="logo-ar">واحة اليمن</span>
+          <span class="logo-en">Wahat Al-Yaman</span>
+        </div>
+        <nav>
+          <a
+            href="#"
+            class="nav-a act"
+            onclick="
+              showPg('home');
+              return false;
+            "
+            >الرئيسية</a
+          >
+          <a
+            href="#"
+            class="nav-a"
+            onclick="
+              showPg('menu');
+              return false;
+            "
+            >القائمة</a
+          >
+          <a
+            href="#"
+            class="nav-a"
+            onclick="
+              scrollSec('branches');
+              return false;
+            "
+            >فروعنا</a
+          >
+          <a
+            href="#"
+            class="nav-a"
+            onclick="
+              scrollSec('revs');
+              return false;
+            "
+            >التقييمات</a
+          >
+        </nav>
+        <div class="hdr-acts">
+          <div
+            class="hdr-branch-chip"
+            onclick="
+              document.getElementById('branchPopup').classList.remove('hidden')
+            "
+            title="تغيير الفرع">
+            <span class="hdr-branch-dot"></span>
+            <span class="chip-txt" id="hdrBranchName">الشيخ زايد</span>
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+          <button
+            class="dark-btn"
+            onclick="toggleDark()"
+            aria-label="الوضع الليلي"
+            id="darkBtn">
+            🌙
+          </button>
+          <button class="cart-btn" onclick="toggleCart()" aria-label="السلة">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span class="cart-cnt" id="cartCount">0</span>
+          </button>
+          <button class="hamburger" id="hamburger" onclick="toggleMobNav()">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mob-nav" id="mobNav">
+      <button class="mob-close" onclick="toggleMobNav()">✕</button>
+      <a
+        class="nav-a"
+        href="#"
+        onclick="
+          showPg('home');
+          toggleMobNav();
+          return false;
+        "
+        >الرئيسية</a
+      >
+      <a
+        class="nav-a"
+        href="#"
+        onclick="
+          showPg('menu');
+          toggleMobNav();
+          return false;
+        "
+        >القائمة</a
+      >
+      <a
+        class="nav-a"
+        href="#"
+        onclick="
+          scrollSec('branches');
+          toggleMobNav();
+          return false;
+        "
+        >فروعنا</a
+      >
+      <a
+        class="nav-a"
+        href="#"
+        onclick="
+          scrollSec('revs');
+          toggleMobNav();
+          return false;
+        "
+        >التقييمات</a
+      >
+      <button class="btn-wa" style="margin-top: 12px" onclick="orderWA('')">
+        اطلب الآن واتساب
+      </button>
+    </nav>
+
+    <!-- ─── HOME PAGE ─── -->
+    <div id="home-pg" class="pg act">
+      <!-- HERO -->
+      <section id="hero">
+        <div class="hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1529694157872-4e0c0f3b238b?w=1920&auto=format&fit=crop&q=80"
+            alt="واحة اليمن"
+            loading="eager" />
+        </div>
+        <div class="hero-ov"></div>
+        <div class="container">
+          <div class="hero-cont">
+            <div class="hero-badge">
+              <span class="h-dot"></span>مفتوح الآن · فرعا الشيخ زايد والمهندسين
+            </div>
+            <h1 class="hero-h1">
+              أصالة المذاق<br /><span>اليمني والمصري</span>
+            </h1>
+            <p class="hero-sub">
+              تجربة طعام استثنائية تجمع أعرق الوصفات اليمنية وأشهى المأكولات
+              المصرية في قلب القاهرة الكبرى
+            </p>
+            <div class="hero-acts">
+              <button class="btn-hero-p" onclick="showPg('menu')">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5">
+                  <path
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+                تصفح القائمة الآن
+              </button>
+              <button class="btn-hero-s" onclick="orderWA('')">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+                اطلب الآن
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll">
+          <div class="scroll-ln"></div>
+          مرر للأسفل
+        </div>
+      </section>
+
+      <!-- FOMO TICKER -->
+      <div id="fomo-ticker">
+        <div class="ticker-inner" id="tickerInner"></div>
+      </div>
+
+      <!-- STATS -->
+      <section id="stats">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-card reveal">
+              <span class="stat-icon">😊</span>
+              <div class="stat-num">
+                <span data-target="50000">0</span
+                ><span class="stat-suf">+</span>
+              </div>
+              <div class="stat-lbl">طلب ناجح</div>
+            </div>
+            <div class="stat-card reveal reveal-d1">
+              <span class="stat-icon">⭐</span>
+              <div class="stat-num">4.9<span class="stat-suf">★</span></div>
+              <div class="stat-lbl">متوسط التقييم</div>
+            </div>
+            <div class="stat-card reveal reveal-d2">
+              <span class="stat-icon">🏆</span>
+              <div class="stat-num">
+                <span data-target="10">0</span><span class="stat-suf">+</span>
+              </div>
+              <div class="stat-lbl">سنوات خبرة</div>
+            </div>
+            <div class="stat-card reveal reveal-d3">
+              <span class="stat-icon">💬</span>
+              <div class="stat-num">
+                <span data-target="1200">0</span><span class="stat-suf">+</span>
+              </div>
+              <div class="stat-lbl">تقييم عميل</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEST SELLERS -->
+      <section id="best">
+        <div class="container">
+          <div class="tc reveal">
+            <div class="sec-label">الأكثر طلبًا</div>
+            <h2 class="sec-title">الأطباق المميزة</h2>
+            <p class="sec-sub">اختيارات عملائنا — طعام يجعلك تعود مرارًا</p>
+          </div>
+          <div class="prod-grid" id="bestGrid"></div>
+        </div>
+      </section>
+
+      <!-- TODAY OFFERS -->
+      <section id="today-offers">
+        <div class="container">
+          <div class="offers-header">
+            <div>
+              <div class="sec-label" style="justify-content: flex-start">
+                عروض اليوم
+              </div>
+              <h2 class="sec-title" style="margin-bottom: 0">
+                وفّر أكثر — اطلب أكثر
+              </h2>
+            </div>
+            <div class="fomo-timer">
+              🔥 العرض ينتهي خلال
+              <span class="timer-digits" id="countdown">00:00:00</span>
+            </div>
+          </div>
+          <div class="offer-cards" id="offersGrid"></div>
+        </div>
+      </section>
+
+      <!-- CATEGORIES -->
+      <section id="cats">
+        <div class="container">
+          <div class="tc reveal">
+            <div class="sec-label">استكشف</div>
+            <h2 class="sec-title">تصفح بالتصنيف</h2>
+            <p class="sec-sub">12 تصنيف يناسب جميع الأذواق والمناسبات</p>
+          </div>
+          <div class="cats-grid" id="catsGrid"></div>
+        </div>
+      </section>
+
+      <!-- FEATURED YEMENI -->
+      <section class="feat-sec ym">
+        <div class="container">
+          <div class="feat-lay">
+            <div class="feat-vis reveal">
+              <div class="feat-main">
+                <img
+                  src="https://images.unsplash.com/photo-1567529692333-de9fd6772897?w=800&auto=format&fit=crop"
+                  alt="مندي يمني"
+                  loading="lazy" />
+              </div>
+              <div class="feat-float">
+                <div class="ff-lbl">الأكثر طلبًا</div>
+                <div class="ff-val">مندي الدجاج</div>
+                <div class="ff-stars">★★★★★</div>
+              </div>
+            </div>
+            <div class="feat-content reveal reveal-d2">
+              <div class="sec-label" style="justify-content: flex-start">
+                المطبخ اليمني
+              </div>
+              <h2 class="sec-title">
+                أعرق الوصفات اليمنية<br />في قلب القاهرة
+              </h2>
+              <p
+                style="
+                  color: var(--tx-m);
+                  font-size: 14px;
+                  line-height: 1.9;
+                  margin-bottom: 26px;
+                ">
+                نقدم المندي المطبوخ على الحطب، والمدبي بنكهته الفريدة على
+                الأحجار الساخنة، والزربيان بتوابله الخاصة — وصفات تتوارثها
+                الأجيال.
+              </p>
+              <div class="feat-items" id="yemeniItems"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED EGYPTIAN -->
+      <section class="feat-sec eg">
+        <div class="container">
+          <div class="feat-lay" style="direction: ltr">
+            <div class="feat-content reveal" style="direction: rtl">
+              <div class="sec-label" style="justify-content: flex-start">
+                المطبخ المصري
+              </div>
+              <h2 class="sec-title">نكهة مصرية أصيلة<br />بلمسة مميزة</h2>
+              <p
+                style="
+                  color: var(--tx-m);
+                  font-size: 14px;
+                  line-height: 1.9;
+                  margin-bottom: 26px;
+                ">
+                من المشويات المتنوعة إلى الطواجن الغنية والمأكولات البحرية
+                الطازجة — خامات يومية طازجة وطهاة متخصصون.
+              </p>
+              <div class="feat-items" id="egyptianItems"></div>
+            </div>
+            <div class="feat-vis reveal reveal-d2" style="direction: rtl">
+              <div class="feat-main">
+                <img
+                  src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&auto=format&fit=crop"
+                  alt="مشويات مصرية"
+                  loading="lazy" />
+              </div>
+              <div class="feat-float" style="right: auto; left: -20px">
+                <div class="ff-lbl">من المشويات</div>
+                <div class="ff-val">كباب مشكل</div>
+                <div class="ff-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY US -->
+      <section id="why">
+        <div class="container">
+          <div class="tc reveal">
+            <div class="sec-label">لماذا نحن</div>
+            <h2 class="sec-title">ما الذي يميزنا</h2>
+            <p class="sec-sub">
+              التزامنا بالجودة والأصالة هو ما يجعل عملاءنا يعودون
+            </p>
+          </div>
+          <div class="why-grid" id="whyGrid"></div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section id="revs">
+        <div class="container">
+          <div class="tc reveal">
+            <div class="sec-label">ماذا قالوا</div>
+            <h2 class="sec-title">آراء عملائنا</h2>
+            <p class="sec-sub">أكثر من 5000 عميل سعيد — دعهم يحكوا تجربتهم</p>
+          </div>
+          <div class="rev-sum reveal">
+            <div>
+              <div class="rsum-num">4.9</div>
+              <div class="rsum-stars">★★★★★</div>
+              <div class="rsum-lbl">من 5.0 بناءً على<br />+1200 تقييم</div>
+            </div>
+            <div class="rsum-bars">
+              <div class="rbar-row">
+                <span class="rbar-lbl">5</span>
+                <div class="rbar-track">
+                  <div class="rbar-fill" style="width: 87%"></div>
+                </div>
+                <span style="font-size: 11px; color: rgba(255, 255, 255, 0.5)"
+                  >87%</span
+                >
+              </div>
+              <div class="rbar-row">
+                <span class="rbar-lbl">4</span>
+                <div class="rbar-track">
+                  <div class="rbar-fill" style="width: 9%"></div>
+                </div>
+                <span style="font-size: 11px; color: rgba(255, 255, 255, 0.5)"
+                  >9%</span
+                >
+              </div>
+              <div class="rbar-row">
+                <span class="rbar-lbl">3</span>
+                <div class="rbar-track">
+                  <div class="rbar-fill" style="width: 3%"></div>
+                </div>
+                <span style="font-size: 11px; color: rgba(255, 255, 255, 0.5)"
+                  >3%</span
+                >
+              </div>
+              <div class="rbar-row">
+                <span class="rbar-lbl">2</span>
+                <div class="rbar-track">
+                  <div class="rbar-fill" style="width: 1%"></div>
+                </div>
+                <span style="font-size: 11px; color: rgba(255, 255, 255, 0.5)"
+                  >1%</span
+                >
+              </div>
+              <div class="rbar-row">
+                <span class="rbar-lbl">1</span>
+                <div class="rbar-track">
+                  <div class="rbar-fill" style="width: 0%"></div>
+                </div>
+                <span style="font-size: 11px; color: rgba(255, 255, 255, 0.5)"
+                  >0%</span
+                >
+              </div>
+            </div>
+            <div class="rsum-hi">
+              <div class="rhi">🥩 جودة لحوم ممتازة دائمًا</div>
+              <div class="rhi">⚡ خدمة سريعة واحترافية</div>
+              <div class="rhi">💰 أسعار منافسة وقيمة حقيقية</div>
+              <div class="rhi">🏡 مناسب للعائلات والمجموعات</div>
+            </div>
+          </div>
+          <div class="rev-grid" id="revsGrid"></div>
+        </div>
+      </section>
+
+      <!-- COMPARISON TABLE -->
+      <section id="compare">
+        <div class="container">
+          <div class="tc reveal">
+            <div class="sec-label">لماذا واحة اليمن</div>
+            <h2 class="sec-title">نحن مختلفون</h2>
+            <p class="sec-sub">قارن بنفسك</p>
+          </div>
+          <div class="cmp-table reveal">
+            <div class="cmp-head">
+              <span>الميزة</span>
+              <span class="col-us">واحة اليمن</span>
+              <span>مطاعم أخرى</span>
+            </div>
+            <div class="cmp-row">
+              <span class="cmp-feat">وصفات يمنية أصيلة 100%</span
+              ><span class="cmp-val cmp-yes">✔</span
+              ><span class="cmp-val cmp-no">✗</span>
+            </div>
+            <div class="cmp-row">
+              <span class="cmp-feat">طهاة يمنيون متخصصون</span
+              ><span class="cmp-val cmp-yes">✔</span
+              ><span class="cmp-val cmp-no">✗</span>
+            </div>
+            <div class="cmp-row">
+              <span class="cmp-feat">لحوم طازجة يومية مضمونة</span
+              ><span class="cmp-val cmp-yes">✔</span
+              ><span class="cmp-val cmp-no">✗</span>
+            </div>
+            <div class="cmp-row">
+              <span class="cmp-feat">عروض عائلية بأسعار مميزة</span
+              ><span class="cmp-val cmp-yes">✔</span
+              ><span class="cmp-val cmp-no">✗</span>
+            </div>
+            <div class="cmp-row">
+              <span class="cmp-feat">طلب واتساب مباشر وسريع</span
+              ><span class="cmp-val cmp-yes">✔</span
+              ><span class="cmp-val cmp-no">✗</span>
+            </div>
+            <div class="cmp-row">
+              <span class="cmp-feat">فرعان في مواقع مميزة</span
+              ><span class="cmp-val cmp-yes">✔</span
+              ><span class="cmp-val cmp-no">✗</span>
+            </div>
+            <div class="cmp-row">
+              <span class="cmp-feat">تقييم 4.9 من 5 (1200+ تقييم)</span
+              ><span class="cmp-val cmp-yes">✔</span
+              ><span class="cmp-val cmp-no">✗</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gal">
+        <div class="container">
+          <div class="tc reveal">
+            <div class="sec-label">معرضنا</div>
+            <h2 class="sec-title">من مطبخنا إلى طاولتك</h2>
+            <p class="sec-sub">لقطات حقيقية من أطباقنا وأجوائنا</p>
+          </div>
+          <div class="gal-tabs">
+            <div class="gtab act" onclick="switchGalTab('food', this)">
+              أطباقنا
+            </div>
+            <div class="gtab" onclick="switchGalTab('restaurant', this)">
+              المطعم
+            </div>
+            <div class="gtab" onclick="switchGalTab('kitchen', this)">
+              المطبخ
+            </div>
+            <div class="gtab" onclick="switchGalTab('exp', this)">
+              تجربة العملاء
+            </div>
+          </div>
+          <div class="gal-grid" id="galGrid"></div>
+        </div>
+      </section>
+
+      <!-- STORY -->
+      <section id="story">
+        <div class="container">
+          <div class="story-lay">
+            <div class="story-txt reveal">
+              <div class="sec-label">حكايتنا</div>
+              <h2 class="sec-title">حكاية الواحة</h2>
+              <p class="story-p">
+                بدأت رحلة واحة اليمن من شغف حقيقي بالطبخ اليمني الأصيل — ورغبة
+                في نقل هذه التجربة الاستثنائية إلى قلب القاهرة. جمعنا بين أعرق
+                الوصفات اليمنية المتوارثة وخامات مصرية طازجة، لنقدم مزيجًا
+                فريدًا لا تجده في مكان آخر.
+              </p>
+              <div class="story-facts">
+                <div class="sfact">
+                  <div class="sfact-icon">🍚</div>
+                  <div>
+                    <div class="sfact-title">ما هو المندي؟</div>
+                    <div class="sfact-desc">
+                      المندي أصله من اليمن — لحم أو دجاج يُطهى في تنور أرضي فوق
+                      الحطب، يُكسبه نكهة دخانية لا تُنسى مع أرز بسمتي مبهر.
+                    </div>
+                  </div>
+                </div>
+                <div class="sfact">
+                  <div class="sfact-icon">🥩</div>
+                  <div>
+                    <div class="sfact-title">الفرق بين المندي والمظبي</div>
+                    <div class="sfact-desc">
+                      المندي يُطهى بالبخار في التنور، أما المظبي فيُطهى على
+                      الأحجار الساخنة مما يعطيه لونًا ذهبيًا وقشرة مقرمشة مميزة.
+                    </div>
+                  </div>
+                </div>
+                <div class="sfact">
+                  <div class="sfact-icon">🍲</div>
+                  <div>
+                    <div class="sfact-title">الزربيان — طبق الأفراح</div>
+                    <div class="sfact-desc">
+                      أرز بسمتي يُطهى مع اللحم والزعفران والكشمش والمكسرات — كان
+                      طبق الأعراس والمناسبات الكبرى في اليمن.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="story-imgs reveal reveal-d2">
+              <div class="story-img-main">
+                <img
+                  src="https://images.unsplash.com/photo-1567529692333-de9fd6772897?w=800&auto=format&fit=crop"
+                  alt="المندي اليمني"
+                  loading="lazy" />
+              </div>
+              <div class="story-img-s">
+                <img
+                  src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&auto=format&fit=crop"
+                  alt="المطبخ"
+                  loading="lazy" />
+              </div>
+              <div class="story-img-s">
+                <img
+                  src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&auto=format&fit=crop"
+                  alt="الأجواء"
+                  loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRANCHES -->
+      <section id="branches">
+        <div class="container">
+          <div class="tc reveal">
+            <div class="sec-label">فروعنا</div>
+            <h2 class="sec-title">نحن بالقرب منك</h2>
+            <p class="sec-sub">فرعان في قلب القاهرة الكبرى</p>
+          </div>
+          <div class="br-grid">
+            <div class="brcard reveal">
+              <div class="brcard-img">
+                <img
+                  src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop"
+                  alt="فرع الشيخ زايد"
+                  loading="lazy" />
+                <div class="brcard-chip">الشيخ زايد</div>
+              </div>
+              <div class="brcard-body">
+                <h3 class="brname">فرع الشيخ زايد</h3>
+                <div class="brdet">
+                  <span class="brdet-icon">📍</span
+                  ><span class="brdet-txt"
+                    >الحي الثامن، الشيخ زايد، الجيزة</span
+                  >
+                </div>
+                <div class="brdet">
+                  <span class="brdet-icon">🕐</span
+                  ><span class="brdet-txt">يوميًا 12:00 ظ – 1:00 ص</span>
+                </div>
+                <div class="brdet">
+                  <span class="brdet-icon">📞</span
+                  ><span class="brdet-txt">01000000001</span>
+                </div>
+                <div class="bract">
+                  <a
+                    class="bbtn bbtn-p"
+                    href="https://wa.me/201000000001"
+                    target="_blank"
+                    >اطلب واتساب</a
+                  >
+                  <a
+                    class="bbtn bbtn-s"
+                    href="https://maps.google.com/?q=Sheikh+Zayed+Giza"
+                    target="_blank"
+                    >خريطة</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="brcard reveal reveal-d2">
+              <div class="brcard-img">
+                <img
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&auto=format&fit=crop"
+                  alt="فرع المهندسين"
+                  loading="lazy" />
+                <div class="brcard-chip">المهندسين</div>
+              </div>
+              <div class="brcard-body">
+                <h3 class="brname">فرع المهندسين</h3>
+                <div class="brdet">
+                  <span class="brdet-icon">📍</span
+                  ><span class="brdet-txt"
+                    >شارع جامعة الدول العربية، المهندسين</span
+                  >
+                </div>
+                <div class="brdet">
+                  <span class="brdet-icon">🕐</span
+                  ><span class="brdet-txt">يوميًا 12:00 ظ – 1:00 ص</span>
+                </div>
+                <div class="brdet">
+                  <span class="brdet-icon">📞</span
+                  ><span class="brdet-txt">01000000002</span>
+                </div>
+                <div class="bract">
+                  <a
+                    class="bbtn bbtn-p"
+                    href="https://wa.me/201000000002"
+                    target="_blank"
+                    >اطلب واتساب</a
+                  >
+                  <a
+                    class="bbtn bbtn-s"
+                    href="https://maps.google.com/?q=Mohandessin+Giza"
+                    target="_blank"
+                    >خريطة</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="container">
+          <div class="tc reveal">
+            <div class="sec-label">أسئلة شائعة</div>
+            <h2 class="sec-title">هل لديك سؤال؟</h2>
+          </div>
+          <div class="faq-list" id="faqList"></div>
+        </div>
+      </section>
+
+      <!-- WA CTA -->
+      <section id="wacta">
+        <div class="container">
+          <div class="cta-box">
+            <div class="sec-label">اطلب الآن</div>
+            <h2 class="sec-title">جوعان؟ احنا جاهزين! 🍖</h2>
+            <p class="cta-sub">
+              اطلب عبر واتساب مباشرة — بدون تطبيق، بدون تعقيد
+            </p>
+            <div class="cta-brs">
+              <a
+                href="https://wa.me/201000000001?text=مرحبا،+أريد+طلب+من+فرع+الشيخ+زايد"
+                target="_blank"
+                class="cta-br">
+                <span class="cta-br-icon">🟢</span>
+                <span class="cta-br-lbl">اطلب الآن من</span>
+                <span class="cta-br-name">فرع الشيخ زايد</span>
+                <span class="cta-br-sub">01000000001</span>
+              </a>
+              <a
+                href="https://wa.me/201000000002?text=مرحبا،+أريد+طلب+من+فرع+المهندسين"
+                target="_blank"
+                class="cta-br">
+                <span class="cta-br-icon">🟢</span>
+                <span class="cta-br-lbl">اطلب الآن من</span>
+                <span class="cta-br-name">فرع المهندسين</span>
+                <span class="cta-br-sub">01000000002</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end home-pg -->
+
+    <!-- ─── MENU PAGE ─── -->
+    <div id="menu-pg" class="pg">
+      <div style="padding-top: 80px">
+        <div class="menu-hdr">
+          <h1 class="menu-hdr-t">قائمة الطعام الكاملة</h1>
+          <p class="menu-hdr-s">+120 صنف متنوع من المطبخ اليمني والمصري</p>
+          <div class="search-wrap">
+            <svg
+              class="srch-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              type="text"
+              class="menu-srch"
+              id="menuSrch"
+              placeholder="ابحث: مندي، دجاج، سمك..."
+              oninput="filterMenu()"
+              autocomplete="off" />
+            <div class="srch-suggestions" id="srchSugg"></div>
+          </div>
+          <div class="br-pills">
+            <div class="brp act" onclick="switchMenuBranch(this, 'zayed')">
+              🏢 الشيخ زايد
+            </div>
+            <div class="brp" onclick="switchMenuBranch(this, 'mohandessin')">
+              🏙️ المهندسين
+            </div>
+          </div>
+        </div>
+        <div class="menu-body">
+          <aside class="menu-side">
+            <div class="side-t">التصنيفات</div>
+            <div id="menuSide"></div>
+          </aside>
+          <main class="menu-main" id="menuMain"></main>
+        </div>
+      </div>
+    </div>
+    <!-- end menu-pg -->
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+      <div class="container">
+        <div class="ft-grid">
+          <div>
+            <div class="ft-name">واحة اليمن</div>
+            <p class="ft-desc">
+              مطعم يمني مصري أصيل يقدم أشهى المأكولات الشرقية في فرعَي الشيخ
+              زايد والمهندسين. نلتزم بأعلى معايير الجودة والطازجية يوميًا.
+            </p>
+            <div class="ft-social">
+              <a class="soc-btn" href="#" aria-label="فيسبوك">📘</a>
+              <a class="soc-btn" href="#" aria-label="انستغرام">📸</a>
+              <a class="soc-btn" href="#" aria-label="تيك توك">🎵</a>
+              <a
+                class="soc-btn"
+                href="https://wa.me/201000000001"
+                aria-label="واتساب"
+                >💬</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="ft-col-t">روابط سريعة</div>
+            <div class="ft-links">
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  showPg('home');
+                  return false;
+                "
+                >الرئيسية</a
+              >
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  showPg('menu');
+                  return false;
+                "
+                >قائمة الطعام</a
+              >
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  scrollSec('today-offers');
+                  return false;
+                "
+                >عروض اليوم</a
+              >
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  scrollSec('revs');
+                  return false;
+                "
+                >آراء العملاء</a
+              >
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  scrollSec('story');
+                  return false;
+                "
+                >حكايتنا</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="ft-col-t">التصنيفات</div>
+            <div class="ft-links">
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  showPg('menu');
+                  return false;
+                "
+                >مندي ومدبي</a
+              >
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  showPg('menu');
+                  return false;
+                "
+                >مشويات</a
+              >
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  showPg('menu');
+                  return false;
+                "
+                >وجبات مصرية</a
+              >
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  showPg('menu');
+                  return false;
+                "
+                >مأكولات بحرية</a
+              >
+              <a
+                class="ft-lnk"
+                href="#"
+                onclick="
+                  showPg('menu');
+                  return false;
+                "
+                >عروض عائلية</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="ft-col-t">تواصل معنا</div>
+            <div class="ft-contact">
+              <div class="fc-item">
+                <span class="fc-icon">📍</span
+                ><span class="fc-txt">الشيخ زايد، الجيزة</span>
+              </div>
+              <div class="fc-item">
+                <span class="fc-icon">📍</span
+                ><span class="fc-txt">المهندسين، الجيزة</span>
+              </div>
+              <div class="fc-item">
+                <span class="fc-icon">🕐</span
+                ><span class="fc-txt">يوميًا 12:00 ظ – 1:00 ص</span>
+              </div>
+              <div class="fc-item">
+                <span class="fc-icon">💬</span
+                ><span class="fc-txt">01000000001 / 01000000002</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ft-bot">
+          <p class="ft-copy">© 2025 واحة اليمن. جميع الحقوق محفوظة.</p>
+          <div class="ft-bot-links">
+            <a href="#">الخصوصية</a><a href="#">الشروط</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ─── FLOATS ─── -->
+    <div id="float-wa">
+      <div class="fw-tip">اطلب عبر واتساب</div>
+      <a
+        href="#"
+        onclick="
+          orderWA('');
+          return false;
+        "
+        class="fw-btn"
+        aria-label="واتساب">
+        <div class="fw-ring"></div>
+        <svg viewBox="0 0 24 24" fill="white">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+      </a>
+    </div>
+    <div id="float-call">
+      <a href="tel:+201000000001" class="fc-btn" aria-label="اتصل بنا">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.09 6.09l1.27-.36a2 2 0 012.11.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- ─── PRODUCT MODAL ─── -->
+    <div class="modal-ov" id="prodModal" onclick="closeMod(event)">
+      <div class="modal">
+        <div class="m-img">
+          <img id="mImg" src="" alt="" loading="lazy" /><button
+            class="m-close"
+            onclick="closeMod()">
+            ✕
+          </button>
+        </div>
+        <div class="m-body">
+          <div class="m-cat" id="mCat"></div>
+          <h2 class="m-name" id="mName"></h2>
+          <p class="m-desc" id="mDesc"></p>
+          <div class="m-price" id="mPrice"></div>
+          <div class="m-qty-row">
+            <span class="qty-lbl">الكمية:</span>
+            <div class="qty-ctrl">
+              <button class="qty-b" onclick="chQty(-1)">−</button>
+              <span class="qty-v" id="mQty">1</span>
+              <button class="qty-b" onclick="chQty(1)">+</button>
+            </div>
+          </div>
+          <div class="m-acts">
+            <button class="m-add" onclick="addFromMod()">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+              أضف للسلة
+            </button>
+            <button class="m-wa" onclick="orderFromMod()">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+              </svg>
+              اطلب الآن واتساب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── CART ─── -->
+    <div class="cart-bk" id="cartBk" onclick="toggleCart()"></div>
+    <div class="cart-drw" id="cartDrw">
+      <div class="cart-hdr">
+        <h2 class="cart-title">🛒 سلة الطلب</h2>
+        <button class="cart-x" onclick="toggleCart()">✕</button>
+      </div>
+      <div class="cart-bdy" id="cartBdy"></div>
+      <div class="cart-ft" id="cartFt" style="display: none">
+        <div class="cart-notes-lbl">ملاحظات الطلب</div>
+        <textarea
+          class="cart-notes"
+          id="cartNotes"
+          rows="2"
+          placeholder="هل تريد أي تعديلات؟"></textarea>
+        <div class="cart-sum">
+          <div class="cs-row">
+            <span>المجموع</span><span id="cartSub">0 جنيه</span>
+          </div>
+          <div class="cs-row"><span>التوصيل</span><span>حسب الاتفاق</span></div>
+          <div class="cs-row cs-total">
+            <span>الإجمالي</span><span id="cartTot">0 جنيه</span>
+          </div>
+        </div>
+        <button class="cart-co" onclick="checkout()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+          </svg>
+          إرسال الطلب عبر واتساب
+        </button>
+      </div>
+    </div>
+
+    <!-- ─── COUPON POPUP ─── -->
+    <div id="coupon-pop">
+      <div class="coup-box">
+        <button class="coup-x" onclick="closeCoupon()">✕</button>
+        <div class="coup-img">
+          <img
+            src="https://images.unsplash.com/photo-1567529692333-de9fd6772897?w=600&auto=format&fit=crop"
+            alt="عرض خاص"
+            loading="lazy" />
+          <div class="coup-img-ov">
+            <div class="coup-headline">
+              احصل على خصم <span>10%</span> على طلبك الأول! 🎉
+            </div>
+          </div>
+        </div>
+        <div class="coup-body">
+          <p class="coup-desc">
+            سجّل اسمك ورقمك وسنرسل لك كود الخصم فورًا على واتساب. العرض لفترة
+            محدودة!
+          </p>
+          <div class="coup-form" id="coupForm">
+            <input
+              class="coup-input"
+              type="text"
+              id="coupName"
+              placeholder="اسمك الكريم"
+              autocomplete="name" />
+            <input
+              class="coup-input"
+              type="tel"
+              id="coupPhone"
+              placeholder="رقم واتساب (01xxxxxxxxx)"
+              autocomplete="tel" />
+            <button class="coup-submit" onclick="submitCoupon()">
+              احصل على كود الخصم
+            </button>
+            <button class="coup-skip" onclick="closeCoupon()">
+              لا شكرًا، أريد المتابعة بدون خصم
+            </button>
+          </div>
+          <div class="coup-code" id="coupCode">
+            <div class="coup-code-lbl">كود الخصم الخاص بك</div>
+            <div class="coup-code-val">WAHATA10</div>
+            <p style="font-size: 12px; color: var(--tx-m); margin-top: 8px">
+              أرسل هذا الكود مع طلبك على واتساب للحصول على الخصم
+            </p>
+            <button
+              class="btn-wa"
+              style="margin-top: 14px; width: 100%; justify-content: center"
+              onclick="orderWithCoupon()">
+              اطلب الآن بالخصم
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLB()">
+      <button class="lb-x" onclick="closeLB()">✕</button>
+      <img id="lbImg" src="" alt="" />
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

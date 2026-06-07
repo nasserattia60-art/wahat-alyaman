@@ -1,0 +1,39 @@
+{
+  "name": "مطعم واحة اليمن",
+  "short_name": "واحة اليمن",
+  "description": "مطعم يمني مصري أصيل في الشيخ زايد والمهندسين — اطلب الآن عبر واتساب",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f5ef",
+  "theme_color": "#5C3317",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "اطلب من الشيخ زايد",
+      "url": "/?branch=zayed",
+      "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "اطلب من المهندسين",
+      "url": "/?branch=mohandessin",
+      "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "categories": ["food", "lifestyle", "shopping"]
+}

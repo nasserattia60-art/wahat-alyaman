@@ -32,13 +32,26 @@
           "currenciesAccepted": "EGP",
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Adeer Plaza, Golden Walk Strip, Waslet Dahshur Rd, Entrance 6",
             "addressLocality": "الشيخ زايد",
             "addressRegion": "الجيزة",
             "addressCountry": "EG"
           },
-          "telephone": "+201000000001",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "30.0078",
+            "longitude": "30.9974"
+          },
+          "telephone": "+201118883232",
           "url": "https://wahat-alyaman.com",
-          "openingHours": "Mo-Su 12:00-01:00",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "opens": "08:00",
+              "closes": "02:00"
+            }
+          ],
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
@@ -54,13 +67,26 @@
           "currenciesAccepted": "EGP",
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "شارع جامعة الدول العربية",
             "addressLocality": "المهندسين",
             "addressRegion": "الجيزة",
             "addressCountry": "EG"
           },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "30.06",
+            "longitude": "31.2"
+          },
           "telephone": "+20 11 18883232",
           "url": "https://wahat-alyaman.vercel.app/",
-          "openingHours": "Mo-Su 8:00-02:00",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "opens": "08:00",
+              "closes": "02:00"
+            }
+          ],
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.7",
@@ -92,6 +118,12 @@
       ]
     </script>
     <title>مطعم واحة اليمن | أصالة المذاق اليمني والمصري</title>
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="واحة اليمن" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -764,6 +796,26 @@
                     target="_blank"
                     >خريطة</a
                     >
+                  <a
+                    class="bbtn bbtn-tel"
+                    href="tel:+201118883232"
+                    aria-label="اتصل بفرع الشيخ زايد"
+                    ><i class="fa-solid fa-phone"></i> اتصل</a
+                  >
+                </div>
+                <!-- Google Maps embed - الشيخ زايد -->
+                <div class="br-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.0!2d30.9974!3d30.0078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA0JzI4LjEiTiAzMMKwNTknNTEuNiJF!5e0!3m2!1sar!2seg!4v1"
+                    width="100%"
+                    height="180"
+                    style="border:0;border-radius:12px;margin-top:14px"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="موقع فرع الشيخ زايد على الخريطة">
+                  </iframe>
+                  <!-- TODO: استبدل src بـ embed URL الحقيقي من Google Maps للفرع -->
                 </div>
               </div>
             </div>
@@ -804,6 +856,26 @@
                     target="_blank"
                     >خريطة</a
                   >
+                  <a
+                    class="bbtn bbtn-tel"
+                    href="tel:+201112223232"
+                    aria-label="اتصل بفرع المهندسين"
+                    ><i class="fa-solid fa-phone"></i> اتصل</a
+                  >
+                </div>
+                <!-- Google Maps embed - المهندسين -->
+                <div class="br-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.0!2d31.2!3d30.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAzJzM2LjAiTiAzMcKwMTInMDAuMCJF!5e0!3m2!1sar!2seg!4v1"
+                    width="100%"
+                    height="180"
+                    style="border:0;border-radius:12px;margin-top:14px"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="موقع فرع المهندسين على الخريطة">
+                  </iframe>
+                  <!-- TODO: استبدل src بـ embed URL الحقيقي من Google Maps للفرع -->
                 </div>
               </div>
             </div>
@@ -1063,7 +1135,7 @@
       </a>
     </div>
     <div id="float-call">
-      <a href="tel:+201118883232" class="fc-btn" aria-label="اتصل بنا">
+      <a id="floatCallLink" href="tel:+201118883232" class="fc-btn" aria-label="اتصل بنا">
         <i class="fa-solid fa-phone"></i>
       </a>
     </div>
@@ -1193,6 +1265,22 @@
       </div>
     </div>
 
+    <!-- ─── MOBILE FLOATING CTA BAR ─── -->
+    <div id="mob-cta-bar">
+      <a href="#" onclick="orderWA('');return false;" class="mob-cta-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>اطلب الآن</span>
+      </a>
+      <a href="#" onclick="scrollSec('branches');return false;" class="mob-cta-loc">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>الفروع</span>
+      </a>
+      <a id="mob-cta-tel" href="tel:+201118883232" class="mob-cta-call">
+        <i class="fa-solid fa-phone"></i>
+        <span>اتصل</span>
+      </a>
+    </div>
+
     <!-- TOAST -->
     <div class="toast" id="toast"></div>
 
@@ -1202,5 +1290,13 @@
       <img id="lbImg" src="" alt="" />
     </div>
     <script src="js/script.js"></script>
+    <script>
+      // Service Worker Registration (PWA)
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js").catch(() => {});
+        });
+      }
+    </script>
   </body>
 </html>

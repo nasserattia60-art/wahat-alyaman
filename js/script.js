@@ -598,13 +598,35 @@ let curProd = null;
 let modQty = 1;
 let branch = "zayed";
 let isDark = false;
-const WA_Z = "201000000001";
-const WA_M = "201000000002";
+// ⚠️ TODO: استبدل هذه الأرقام بالأرقام الحقيقية قبل الرفع للإنتاج
+const WA_Z = "201000000001"; // TODO: رقم واتساب فرع الشيخ زايد الحقيقي
+const WA_M = "201000000002"; // TODO: رقم واتساب فرع المهندسين الحقيقي
+const TEL_Z = "+201000000001"; // TODO: رقم هاتف فرع الشيخ زايد الحقيقي
+const TEL_M = "+20111888323"; // TODO: رقم هاتف فرع المهندسين الحقيقي
 
 // ══════════════════════════════════════
 // INIT
 // ══════════════════════════════════════
 document.addEventListener("DOMContentLoaded", () => {
+  // استعادة اختيار الفرع من localStorage
+  const savedBranch = localStorage.getItem("selectedBranch");
+  if (savedBranch) {
+    branch = savedBranch;
+    document.getElementById("branchPopup").classList.add("hidden");
+    document.getElementById("hdrBranchName").textContent =
+      savedBranch === "zayed" ? "الشيخ زايد" : "المهندسين";
+    // مزامنة الـ pills في صفحة المنيو
+    document.querySelectorAll(".brp").forEach((p) => p.classList.remove("act"));
+    const activePill = document.querySelector(`.brp[onclick*="${savedBranch}"]`);
+    if (activePill) activePill.classList.add("act");
+  }
+  // استعادة الوضع الليلي
+  if (localStorage.getItem("darkMode") === "1") {
+    isDark = true;
+    document.documentElement.setAttribute("data-theme", "dark");
+    const icon = document.getElementById("darkIcon");
+    if (icon) icon.className = "fa-solid fa-sun";
+  }
   renderAll();
   initHeader();
   initReveal();
@@ -632,18 +654,30 @@ function renderAll() {
 // ══════════════════════════════════════
 function selectBranchPopup(b, el) {
   branch = b;
+  localStorage.setItem("selectedBranch", b);
   document.getElementById("branchPopup").classList.add("hidden");
   document.getElementById("hdrBranchName").textContent =
     b === "zayed" ? "الشيخ زايد" : "المهندسين";
+  _updateCallLinks(b);
   showToast('<i class="fa-solid fa-check-circle" style="color:var(--ok)"></i> تم اختيار فرع ' + (b === "zayed" ? "الشيخ زايد" : "المهندسين"));
 }
 
 function switchMenuBranch(el, b) {
   branch = b;
+  localStorage.setItem("selectedBranch", b);
   document.querySelectorAll(".brp").forEach((p) => p.classList.remove("act"));
   el.classList.add("act");
   document.getElementById("hdrBranchName").textContent =
     b === "zayed" ? "الشيخ زايد" : "المهندسين";
+  _updateCallLinks(b);
+}
+
+function _updateCallLinks(b) {
+  const tel = b === "zayed" ? TEL_Z : TEL_M;
+  const floatCall = document.getElementById("floatCallLink");
+  if (floatCall) floatCall.href = "tel:" + tel;
+  const mobTel = document.getElementById("mob-cta-tel");
+  if (mobTel) mobTel.href = "tel:" + tel;
 }
 
 // ══════════════════════════════════════
@@ -675,6 +709,7 @@ function toggleMobNav() {
 function toggleDark() {
   isDark = !isDark;
   document.documentElement.setAttribute("data-theme", isDark ? "dark" : "");
+  localStorage.setItem("darkMode", isDark ? "1" : "");
   const icon = document.getElementById("darkIcon");
   icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
 }

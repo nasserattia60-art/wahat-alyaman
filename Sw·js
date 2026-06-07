@@ -1,0 +1,67 @@
+// ═══════════════════════════════════════════════
+// واحة اليمن - Service Worker (PWA)
+// ═══════════════════════════════════════════════
+
+const CACHE_NAME = "wahat-alyaman-v1";
+const STATIC_ASSETS = [
+  "/",
+  "/index.html",
+  "/css/style.css",
+  "/js/script.js",
+  "/manifest.json",
+];
+
+// Install: cache static assets
+self.addEventListener("install", (e) => {
+  self.skipWaiting();
+  e.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(STATIC_ASSETS))
+  );
+});
+
+// Activate: clear old caches
+self.addEventListener("activate", (e) => {
+  e.waitUntil(
+    caches.keys().then((keys) =>
+      Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))
+    )
+  );
+  self.clients.claim();
+});
+
+// Fetch: Network-first for HTML, Cache-first for assets
+self.addEventListener("fetch", (e) => {
+  const { request } = e;
+  const url = new URL(request.url);
+
+  // Skip non-GET and cross-origin (Unsplash, fonts, etc)
+  if (request.method !== "GET" || url.origin !== location.origin) return;
+
+  // Network-first for HTML pages
+  if (request.headers.get("accept")?.includes("text/html")) {
+    e.respondWith(
+      fetch(request)
+        .then((res) => {
+          const clone = res.clone();
+          caches.open(CACHE_NAME).then((c) => c.put(request, clone));
+          return res;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // Cache-first for CSS/JS/images
+  e.respondWith(
+    caches.match(request).then((cached) => {
+      if (cached) return cached;
+      return fetch(request).then((res) => {
+        if (res.ok) {
+          const clone = res.clone();
+          caches.open(CACHE_NAME).then((c) => c.put(request, clone));
+        }
+        return res;
+      });
+    })
+  );
+});

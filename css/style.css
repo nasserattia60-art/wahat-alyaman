@@ -3365,3 +3365,93 @@
           display: none;
         }
       }
+      /* ─── BRANCH TEL BUTTON ─── */
+      .bbtn-tel {
+        background: var(--ok);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 12px;
+      }
+      .bbtn-tel:hover {
+        background: #15803d;
+      }
+
+      /* ─── BRANCH MAP EMBED ─── */
+      .br-map {
+        margin-top: 4px;
+      }
+      .br-map iframe {
+        width: 100%;
+        height: 180px;
+        border: 0;
+        border-radius: 12px;
+      }
+
+      /* ─── MOBILE FLOATING CTA BAR ─── */
+      #mob-cta-bar {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1200;
+        background: var(--surf);
+        border-top: 1px solid rgba(92,51,23,0.15);
+        box-shadow: 0 -4px 20px rgba(92,51,23,0.12);
+        padding: 8px 12px;
+        padding-bottom: max(8px, env(safe-area-inset-bottom));
+        flex-direction: row;
+        gap: 8px;
+      }
+      #mob-cta-bar a {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        padding: 8px 4px;
+        border-radius: 10px;
+        font-size: 10px;
+        font-weight: 700;
+        transition: var(--tr);
+      }
+      #mob-cta-bar a i {
+        font-size: 18px;
+      }
+      #mob-cta-bar a span {
+        font-family: var(--ff);
+        font-size: 10px;
+      }
+      .mob-cta-wa {
+        background: var(--wa);
+        color: #fff !important;
+      }
+      .mob-cta-wa:hover { opacity: 0.9; }
+      .mob-cta-loc {
+        background: var(--bg-w);
+        color: var(--br) !important;
+        border: 1px solid rgba(92,51,23,0.15);
+      }
+      .mob-cta-call {
+        background: var(--br);
+        color: #fff !important;
+      }
+      .mob-cta-call:hover { background: var(--br-l); }
+
+      @media (max-width: 768px) {
+        #mob-cta-bar {
+          display: flex;
+        }
+        /* إضافة padding للـ body لتفادي تداخل الـ CTA bar */
+        body {
+          padding-bottom: 72px;
+        }
+        /* إخفاء الـ floating WA على الموبايل (الـ CTA bar يقوم بنفس الدور) */
+        #float-wa, #float-call {
+          display: none;
+        }
+      }

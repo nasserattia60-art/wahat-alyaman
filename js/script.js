@@ -2,18 +2,18 @@
 // DATA
 // ══════════════════════════════════════
 const cats = [
-  { id: "mandi", name: "مندي", icon: "🍚", cnt: 8 },
-  { id: "madhbi", name: "مدبي", icon: "🥩", cnt: 6 },
-  { id: "zurbian", name: "زربيان", icon: "🍲", cnt: 4 },
-  { id: "grills", name: "مشويات", icon: "🔥", cnt: 12 },
-  { id: "egyptian", name: "وجبات مصرية", icon: "🫕", cnt: 10 },
-  { id: "tagines", name: "طواجن", icon: "🥘", cnt: 8 },
-  { id: "seafood", name: "مأكولات بحرية", icon: "🐟", cnt: 6 },
-  { id: "chicken", name: "دجاج", icon: "🍗", cnt: 10 },
-  { id: "trays", name: "تراي عائلي", icon: "🍽️", cnt: 5 },
-  { id: "desserts", name: "حلويات", icon: "🍰", cnt: 7 },
-  { id: "drinks", name: "مشروبات", icon: "🥤", cnt: 9 },
-  { id: "appetizers", name: "مقبلات", icon: "🥗", cnt: 8 },
+  { id: "mandi", name: "مندي", icon: "fa-solid fa-utensils", cnt: 8 },
+  { id: "madhbi", name: "مدبي", icon: "fa-solid fa-drumstick-bite", cnt: 6 },
+  { id: "zurbian", name: "زربيان", icon: "fa-solid fa-bowl-food", cnt: 4 },
+  { id: "grills", name: "مشويات", icon: "fa-solid fa-fire", cnt: 12 },
+  { id: "egyptian", name: "وجبات مصرية", icon: "fa-solid fa-egg", cnt: 10 },
+  { id: "tagines", name: "طواجن", icon: "fa-solid fa-bowl-food", cnt: 8 },
+  { id: "seafood", name: "مأكولات بحرية", icon: "fa-solid fa-fish", cnt: 6 },
+  { id: "chicken", name: "دجاج", icon: "fa-solid fa-drumstick-bite", cnt: 10 },
+  { id: "trays", name: "تراي عائلي", icon: "fa-solid fa-plate-wheat", cnt: 5 },
+  { id: "desserts", name: "حلويات", icon: "fa-solid fa-cake-candles", cnt: 7 },
+  { id: "drinks", name: "مشروبات", icon: "fa-solid fa-whiskey-glass", cnt: 9 },
+  { id: "appetizers", name: "مقبلات", icon: "fa-solid fa-leaf", cnt: 8 },
 ];
 
 const prods = [
@@ -29,7 +29,7 @@ const prods = [
     revs: 342,
     best: true,
     ym: true,
-    fomo: "🔥 آخر 12 عميل طلبوه اليوم",
+    fomo: "آخر 12 عميل طلبوه اليوم",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const prods = [
     revs: 289,
     best: true,
     ym: true,
-    fomo: "⚡ أكثر طبق طلبًا اليوم",
+    fomo: "أكثر طبق طلبًا اليوم",
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ const prods = [
     revs: 156,
     best: true,
     ym: true,
-    fomo: "🆕 أضفناه هذا الأسبوع",
+    fomo: "أضفناه هذا الأسبوع",
   },
   {
     id: 6,
@@ -124,7 +124,7 @@ const prods = [
     revs: 267,
     best: true,
     eg: true,
-    fomo: "🔥 أكثر من 50 طلب اليوم",
+    fomo: "أكثر من 50 طلب اليوم",
   },
   {
     id: 10,
@@ -404,42 +404,42 @@ const revsList = [
 
 const whyList = [
   {
-    icon: "🥩",
+    icon: "fa-solid fa-drumstick-bite",
     title: "لحوم طازجة يومية",
     desc: "نتعامل مع أفضل الموردين ونضمن طزاجة اللحوم والدجاج يوميًا دون استثناء",
   },
   {
-    icon: "👨‍🍳",
+    icon: "fa-solid fa-kitchen-set",
     title: "طهاة يمنيون متخصصون",
     desc: "طواقمنا مدربة على أيدي خبراء من اليمن يضمنون أصالة الطعم",
   },
   {
-    icon: "⚡",
+    icon: "fa-solid fa-bolt",
     title: "طلب سريع عبر واتساب",
     desc: "في ثوانٍ معدودة بدون تطبيق — فقط اضغط وأرسل",
   },
   {
-    icon: "🏠",
+    icon: "fa-solid fa-house-chimney",
     title: "مناسب للعائلات",
     desc: "عروض عائلية مميزة وأجواء مريحة تناسب المجموعات الكبيرة",
   },
   {
-    icon: "💰",
+    icon: "fa-solid fa-coins",
     title: "أسعار تنافسية",
     desc: "جودة عالية بأسعار معقولة — الطعام الجيد ليس فاخرًا بالضرورة",
   },
   {
-    icon: "🌿",
+    icon: "fa-solid fa-seedling",
     title: "مكونات طبيعية 100%",
     desc: "توابل وأعشاب طبيعية فقط، بدون حافظات أو إضافات صناعية",
   },
   {
-    icon: "📍",
+    icon: "fa-solid fa-location-dot",
     title: "فرعان في موقعَين مميزَين",
     desc: "الشيخ زايد والمهندسين — دائمًا قريبون منك",
   },
   {
-    icon: "⭐",
+    icon: "fa-solid fa-star",
     title: "تقييم 4.9 من 5",
     desc: "أكثر من 1200 تقييم إيجابي — ثقة عملائنا هي أكبر جائزة",
   },
@@ -580,14 +580,14 @@ const galData = {
 };
 
 const fomoMsgs = [
-  "🔥 آخر 12 عميل طلبوا مندي اللحم الكامل",
-  "⚡ أكثر طبق طلبًا اليوم: كباب مشكل",
-  "🟢 فرع الشيخ زايد متاح الآن — اطلب خلال 30 ثانية",
-  "🔥 العرض العائلي الكبير محجوز مسبقًا ليوم الجمعة",
-  "⭐ 15 عميل جديد أضافوا تقييم 5 نجوم اليوم",
-  "🟢 فرع المهندسين يقبل طلبات الآن",
-  "🎉 عرض اليوم: خصم 10% على التراي العائلي",
-  "🔥 المدبي على الأحجار — متوفر كميات محدودة اليوم",
+  "آخر 12 عميل طلبوا مندي اللحم الكامل",
+  "أكثر طبق طلبًا اليوم: كباب مشكل",
+  "فرع الشيخ زايد متاح الآن — اطلب خلال 30 ثانية",
+  "العرض العائلي الكبير محجوز مسبقًا ليوم الجمعة",
+  "15 عميل جديد أضافوا تقييم 5 نجوم اليوم",
+  "فرع المهندسين يقبل طلبات الآن",
+  "عرض اليوم: خصم 10% على التراي العائلي",
+  "المدبي على الأحجار — متوفر كميات محدودة اليوم",
 ];
 
 // ══════════════════════════════════════
@@ -635,7 +635,7 @@ function selectBranchPopup(b, el) {
   document.getElementById("branchPopup").classList.add("hidden");
   document.getElementById("hdrBranchName").textContent =
     b === "zayed" ? "الشيخ زايد" : "المهندسين";
-  showToast("📍 تم اختيار فرع " + (b === "zayed" ? "الشيخ زايد" : "المهندسين"));
+  showToast('<i class="fa-solid fa-check-circle" style="color:var(--ok)"></i> تم اختيار فرع ' + (b === "zayed" ? "الشيخ زايد" : "المهندسين"));
 }
 
 function switchMenuBranch(el, b) {
@@ -675,7 +675,8 @@ function toggleMobNav() {
 function toggleDark() {
   isDark = !isDark;
   document.documentElement.setAttribute("data-theme", isDark ? "dark" : "");
-  document.getElementById("darkBtn").textContent = isDark ? "☀️" : "🌙";
+  const icon = document.getElementById("darkIcon");
+  icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
 }
 
 // ══════════════════════════════════════
@@ -710,11 +711,11 @@ function scrollSec(id) {
 // ══════════════════════════════════════
 function renderTicker() {
   const c = document.getElementById("tickerInner");
-  const doubled = [...fomoMsgs, ...fomoMsgs];
-  c.innerHTML = doubled
+  const quad = [...fomoMsgs, ...fomoMsgs, ...fomoMsgs, ...fomoMsgs];
+  c.innerHTML = quad
     .map(
       (m) =>
-        `<div class="ticker-item"><span class="ticker-dot"></span>${m}</div>`,
+        `<div class="ticker-item"><i class="fa-solid fa-circle ticker-dot"></i>${m}</div>`,
     )
     .join("");
 }
@@ -754,7 +755,7 @@ function pCardHTML(p, d = 0) {
     <div class="pcard-img">
       <img src="${p.img}&auto=format&fit=crop&w=400" alt="${p.name}" loading="lazy"/>
       ${p.badge ? `<div class="pbadge ${p.badge === "جديد" ? "new" : p.badge === "الأشهر" ? "hot" : ""}">${p.badge}</div>` : ""}
-      ${p.fomo ? `<div class="pfomo"><span class="pfomo-fire">🔥</span>${p.fomo}</div>` : ""}
+      ${p.fomo ? `<div class="pfomo"><span class="pfomo-fire"><i class="fa-solid fa-fire"></i></span>${p.fomo}</div>` : ""}
     </div>
     <div class="pcard-body">
       <div class="prating"><span class="pstars">${"★".repeat(5)}</span><span class="pcnt">(${p.revs})</span></div>
@@ -804,7 +805,7 @@ function renderCats() {
     .map(
       (c, i) => `
   <div class="ccat reveal reveal-d${(i % 4) + 1}" onclick="goToCat('${c.id}')" role="button" tabindex="0">
-    <span class="ccat-icon">${c.icon}</span>
+    <span class="ccat-icon"><i class="${c.icon}"></i></span>
     <div class="ccat-name">${c.name}</div>
     <div class="ccat-cnt">${c.cnt} صنف</div>
   </div>`,
@@ -845,7 +846,7 @@ function renderRevs() {
   <div class="rcard reveal reveal-d${(i % 3) + 1}">
     <div class="rcard-stars">${"★".repeat(r.stars)}</div>
     <p class="rcard-txt">"${r.txt}"</p>
-    <div class="reviewer"><div class="rev-av">${r.init}</div><div><div class="rev-name">${r.name}</div><div class="rev-meta">📍 ${r.loc} · ${r.date}</div></div></div>
+    <div class="reviewer"><div class="rev-av">${r.init}</div><div><div class="rev-name">${r.name}</div><div class="rev-meta"><i class="fa-solid fa-location-dot" style="font-size:10px;color:var(--go)"></i> ${r.loc} · ${r.date}</div></div></div>
   </div>`,
     )
     .join("");
@@ -857,7 +858,7 @@ function renderWhy() {
     .map(
       (w, i) => `
   <div class="why-card reveal reveal-d${(i % 4) + 1}">
-    <div class="why-icon">${w.icon}</div>
+    <div class="why-icon"><i class="${w.icon}"></i></div>
     <h3 class="why-title">${w.title}</h3>
     <p class="why-desc">${w.desc}</p>
   </div>`,
@@ -896,7 +897,7 @@ function renderGal(tab) {
       (g, i) => `
   <div class="gitem" onclick="openLB('${g.img}')">
     <img src="${g.img}&auto=format&fit=crop&w=600" alt="${g.alt}" loading="lazy"/>
-    <div class="gov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+    <div class="gov"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
   </div>`,
     )
     .join("");
@@ -915,7 +916,7 @@ function buildMenu() {
     .map(
       (c) => `
   <div class="side-item" id="sb-${c.id}" onclick="setActCat('${c.id}');scrollToMenuSec('${c.id}')">
-    <span class="side-item-icon">${c.icon}</span><span>${c.name}</span>
+    <span class="side-item-icon"><i class="${c.icon}"></i></span><span>${c.name}</span>
   </div>`,
     )
     .join("");
@@ -926,7 +927,7 @@ function buildMenu() {
       const items = prods.filter((p) => p.cat === cat.id);
       if (!items.length) return "";
       return `<div class="menu-sec" id="ms-${cat.id}">
-      <h2 class="menu-sec-t"><span>${cat.icon}</span>${cat.name}</h2>
+      <h2 class="menu-sec-t"><span><i class="${cat.icon}"></i></span>${cat.name}</h2>
       <div class="menu-grid">${items.map((p) => miCardHTML(p)).join("")}</div>
     </div>`;
     })
@@ -998,42 +999,103 @@ function filterMenu() {
   } else {
     sugg.classList.remove("show");
   }
-
-  document.querySelectorAll(".menu-sec").forEach((sec) => {
-    let vis = false;
-    sec.querySelectorAll(".mi-card").forEach((card) => {
-      const nm = card.querySelector(".mi-name").textContent.toLowerCase();
-      const ds = card.querySelector(".mi-desc").textContent.toLowerCase();
-      const ok = !q || nm.includes(q) || ds.includes(q);
-      card.style.display = ok ? "" : "none";
-      if (ok) vis = true;
-    });
-    sec.style.display = vis ? "" : "none";
-    if (!vis && q) hasAny = true;
-  });
-
-  // Empty state
-  let noRes = document.getElementById("noRes");
-  if (
-    !hasAny &&
-    q &&
-    document.querySelectorAll('.menu-sec:not([style*="none"])').length === 0
-  ) {
-    if (!noRes) {
-      noRes = document.createElement("div");
-      noRes.id = "noRes";
-      noRes.className = "no-results";
-      noRes.innerHTML = `<div class="no-res-icon">🔍</div><p><strong>لم تجد "${q}"؟</strong></p><p style="font-size:13px;margin-top:6px">جرّب بحثًا مختلفًا أو تحدث معنا مباشرة</p><div class="no-res-wa"><button class="btn-wa" onclick="orderWA('أريد الاستفسار عن: ${q}')">تحدث معنا على واتساب</button></div>`;
-      document.getElementById("menuMain").appendChild(noRes);
-    }
-  } else {
-    if (noRes) noRes.remove();
-  }
 }
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".search-wrap"))
-    document.getElementById("srchSugg").classList.remove("show");
-});
+
+// ══════════════════════════════════════
+// CART
+// ══════════════════════════════════════
+function addToCart(id, e) {
+  if (e) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const r = document.createElement("span");
+    r.className = "ripple-el";
+    r.style.width = r.style.height = "60px";
+    r.style.left = rect.width / 2 - 30 + "px";
+    r.style.top = rect.height / 2 - 30 + "px";
+    e.currentTarget.appendChild(r);
+    setTimeout(() => r.remove(), 700);
+  }
+  const p = prods.find((x) => x.id === id);
+  if (!p) return;
+  const ex = cart.find((x) => x.id === id);
+  if (ex) {
+    ex.qty++;
+  } else {
+    cart.push({ ...p, qty: 1 });
+  }
+  updateCartUI();
+  showToast("تمت إضافة " + p.name + " إلى السلة");
+}
+function updateCartUI() {
+  const cnt = cart.reduce((a, b) => a + b.qty, 0);
+  const el = document.getElementById("cartCount");
+  el.textContent = cnt;
+  el.style.display = cnt ? "flex" : "none";
+
+  const bdy = document.getElementById("cartBdy");
+  const ft = document.getElementById("cartFt");
+  if (!cart.length) {
+    bdy.innerHTML =
+      '<div class="cart-empty"><i class="fa-solid fa-bag-shopping" style="font-size:48px;opacity:0.3"></i><span>سلة طلبك فارغة</span><span style="font-size:13px">تصفح القائمة وأضف ما تشتهي</span></div>';
+    ft.style.display = "none";
+    return;
+  }
+  ft.style.display = "block";
+  bdy.innerHTML = cart
+    .map(
+      (c) => `
+  <div class="cart-item">
+    <div class="ci-img"><img src="${c.img}&auto=format&fit=crop&w=150" alt="${c.name}"/></div>
+    <div class="ci-info">
+      <div class="ci-name">${c.name}</div>
+      <div class="ci-price">${c.price} جنيه</div>
+      <div class="ci-qty">
+        <button class="cq-btn" onclick="chCartQty(${c.id},-1)">−</button>
+        <span class="cq-val">${c.qty}</span>
+        <button class="cq-btn" onclick="chCartQty(${c.id},1)">+</button>
+      </div>
+    </div>
+    <button class="ci-rm" onclick="rmCart(${c.id})"><i class="fa-solid fa-trash-can"></i></button>
+  </div>`,
+    )
+    .join("");
+  const sub = cart.reduce((a, b) => a + b.price * b.qty, 0);
+  document.getElementById("cartSub").textContent = sub + " جنيه";
+  document.getElementById("cartTot").textContent = sub + " جنيه";
+}
+function chCartQty(id, d) {
+  const c = cart.find((x) => x.id === id);
+  if (!c) return;
+  c.qty += d;
+  if (c.qty <= 0) cart = cart.filter((x) => x.id !== id);
+  updateCartUI();
+}
+function rmCart(id) {
+  cart = cart.filter((x) => x.id !== id);
+  updateCartUI();
+}
+function toggleCart() {
+  const bk = document.getElementById("cartBk"),
+    dr = document.getElementById("cartDrw");
+  const isOpen = bk.classList.contains("open");
+  bk.classList.toggle("open");
+  dr.classList.toggle("open");
+  document.body.style.overflow = isOpen ? "" : "hidden";
+}
+function checkout() {
+  if (!cart.length) return showToast("السلة فارغة — أضف أطباقًا أولًا");
+  let msg = "🛒 طلب جديد من " + (branch === "zayed" ? "الشيخ زايد" : "المهندسين") + "\n\n";
+  cart.forEach((c) => {
+    msg += `• ${c.name} ×${c.qty} = ${c.price * c.qty} ج\n`;
+  });
+  msg += `\n💵 *الإجمالي:* ${cart.reduce((a, b) => a + b.price * b.qty, 0)} ج`;
+  const n = document.getElementById("cartNotes").value.trim();
+  if (n) msg += `\n📝 *ملاحظات:* ${n}`;
+  msg += `\n📍 الفرع: ${branch === "zayed" ? "الشيخ زايد" : "المهندسين"}`;
+  const wa = branch === "zayed" ? WA_Z : WA_M;
+  window.open("https://wa.me/" + wa + "?text=" + encodeURIComponent(msg), "_blank");
+  toggleCart();
+}
 
 // ══════════════════════════════════════
 // MODAL
@@ -1043,27 +1105,20 @@ function openMod(id) {
   if (!p) return;
   curProd = p;
   modQty = 1;
-  document.getElementById("mImg").src = p.img + "&auto=format&fit=crop&w=800";
+  document.getElementById("mImg").src = p.img + "&auto=format&fit=crop&w=740";
   document.getElementById("mImg").alt = p.name;
-  document.getElementById("mCat").textContent =
-    cats.find((c) => c.id === p.cat)?.name || "";
+  document.getElementById("mCat").textContent = (cats.find((c) => c.id === p.cat) || {}).name || "";
   document.getElementById("mName").textContent = p.name;
   document.getElementById("mDesc").textContent = p.desc;
-  document.getElementById("mPrice").innerHTML =
-    `${p.price} <small>جنيه</small>`;
+  document.getElementById("mPrice").innerHTML = p.price + ' <small>جنيه</small>';
   document.getElementById("mQty").textContent = "1";
   document.getElementById("prodModal").classList.add("open");
   document.body.style.overflow = "hidden";
 }
 function closeMod(e) {
-  if (
-    !e ||
-    e.target === document.getElementById("prodModal") ||
-    e.currentTarget?.classList.contains("m-close")
-  ) {
-    document.getElementById("prodModal").classList.remove("open");
-    document.body.style.overflow = "";
-  }
+  if (e && e.target !== e.currentTarget) return;
+  document.getElementById("prodModal").classList.remove("open");
+  document.body.style.overflow = "";
 }
 function chQty(d) {
   modQty = Math.max(1, modQty + d);
@@ -1071,162 +1126,137 @@ function chQty(d) {
 }
 function addFromMod() {
   if (!curProd) return;
-  for (let i = 0; i < modQty; i++) addToCart(curProd.id, null, false);
-  updateCart();
+  for (let i = 0; i < modQty; i++) {
+    const ex = cart.find((x) => x.id === curProd.id);
+    if (ex) ex.qty++;
+    else cart.push({ ...curProd, qty: 1 });
+  }
+  updateCartUI();
+  showToast("تمت إضافة " + curProd.name + " (" + modQty + ") إلى السلة");
   closeMod();
-  showToast(`✅ أُضيف ${curProd.name} إلى السلة`);
 }
 function orderFromMod() {
   if (!curProd) return;
-  const msg = `مرحبا 👋\nأريد طلب:\n- ${curProd.name} × ${modQty}\nالإجمالي: ${curProd.price * modQty} جنيه`;
-  openWA(msg);
+  const wa = branch === "zayed" ? WA_Z : WA_M;
+  const msg =
+    "🛒 طلب: " +
+    curProd.name +
+    " ×" +
+    modQty +
+    " = " +
+    curProd.price * modQty +
+    " ج\n📍 " +
+    (branch === "zayed" ? "الشيخ زايد" : "المهندسين");
+  window.open("https://wa.me/" + wa + "?text=" + encodeURIComponent(msg), "_blank");
+  closeMod();
 }
 
 // ══════════════════════════════════════
-// CART
+// ORDER WA
 // ══════════════════════════════════════
-function addToCart(id, ev, show = true) {
-  const p = prods.find((x) => x.id === id);
-  if (!p) return;
-  if (ev) {
-    addRipple(ev.currentTarget || ev.target);
-  }
-  const ex = cart.find((i) => i.id === id);
-  if (ex) ex.qty++;
-  else cart.push({ id, name: p.name, price: p.price, img: p.img, qty: 1 });
-  updateCart();
-  if (show) showToast(`✅ ${p.name} أُضيف للسلة`);
+function orderWA(extra) {
+  const wa = branch === "zayed" ? WA_Z : WA_M;
+  const msg = extra || "مرحباً، أريد الطلب من " + (branch === "zayed" ? "فرع الشيخ زايد" : "فرع المهندسين");
+  window.open("https://wa.me/" + wa + "?text=" + encodeURIComponent(msg), "_blank");
 }
-function addRipple(btn) {
-  if (!btn) return;
-  const r = document.createElement("span");
-  r.className = "ripple-el";
-  const rect = btn.getBoundingClientRect();
-  r.style.cssText = `width:${btn.offsetWidth}px;height:${btn.offsetWidth}px;top:0;left:0`;
-  btn.appendChild(r);
-  setTimeout(() => r.remove(), 600);
-}
-function rmCart(id) {
-  cart = cart.filter((i) => i.id !== id);
-  updateCart();
-}
-function chCartQty(id, d) {
-  const it = cart.find((i) => i.id === id);
-  if (!it) return;
-  it.qty = Math.max(0, it.qty + d);
-  if (it.qty === 0) rmCart(id);
-  else updateCart();
-}
-function updateCart() {
-  const cnt = cart.reduce((a, i) => a + i.qty, 0);
-  const tot = cart.reduce((a, i) => a + i.price * i.qty, 0);
-  const cc = document.getElementById("cartCount");
-  cc.textContent = cnt;
-  cc.style.display = cnt > 0 ? "flex" : "none";
-  const bd = document.getElementById("cartBdy"),
-    ft = document.getElementById("cartFt");
-  if (!cart.length) {
-    bd.innerHTML = `<div class="cart-empty"><div style="font-size:52px;opacity:.3">🛒</div><div style="font-weight:700">سلتك فارغة!</div><p style="font-size:13px;color:var(--tx-l)">أضف أصنافًا من القائمة</p></div>`;
-    ft.style.display = "none";
-  } else {
-    bd.innerHTML = cart
-      .map(
-        (it) => `
-    <div class="cart-item">
-      <div class="ci-img"><img src="${it.img}&auto=format&fit=crop&w=150" alt="${it.name}"/></div>
-      <div class="ci-info">
-        <div class="ci-name">${it.name}</div>
-        <div class="ci-price">${it.price * it.qty} جنيه</div>
-        <div class="ci-qty">
-          <button class="cq-btn" onclick="chCartQty(${it.id},-1)">−</button>
-          <span class="cq-val">${it.qty}</span>
-          <button class="cq-btn" onclick="chCartQty(${it.id},1)">+</button>
-        </div>
-      </div>
-      <button class="ci-rm" onclick="rmCart(${it.id})">🗑️</button>
-    </div>`,
-      )
-      .join("");
-    ft.style.display = "block";
-    document.getElementById("cartSub").textContent = tot + " جنيه";
-    document.getElementById("cartTot").textContent = tot + " جنيه";
-  }
-}
-function toggleCart() {
-  const d = document.getElementById("cartDrw"),
-    b = document.getElementById("cartBk");
-  d.classList.toggle("open");
-  b.classList.toggle("open");
-  document.body.style.overflow = d.classList.contains("open") ? "hidden" : "";
-}
-function checkout() {
-  if (!cart.length) return;
-  const notes = document.getElementById("cartNotes").value;
-  const brName = branch === "zayed" ? "الشيخ زايد" : "المهندسين";
-  let msg = `مرحبا 👋 أريد طلب من فرع ${brName}:\n\n`;
-  cart.forEach((it) => {
-    msg += `- ${it.name} × ${it.qty} = ${it.price * it.qty} جنيه\n`;
-  });
-  const tot = cart.reduce((a, i) => a + i.price * i.qty, 0);
-  msg += `\n💰 الإجمالي: ${tot} جنيه`;
-  if (notes.trim()) msg += `\n\n📝 ملاحظات: ${notes}`;
-  openWA(msg, branch === "zayed" ? WA_Z : WA_M);
+function orderOfferWA(name, price) {
+  const wa = branch === "zayed" ? WA_Z : WA_M;
+  const msg = "مرحباً، أريد عرض " + name + " بسعر " + price + " ج";
+  window.open("https://wa.me/" + wa + "?text=" + encodeURIComponent(msg), "_blank");
 }
 
 // ══════════════════════════════════════
-// COUPON POPUP
+// COUPON
 // ══════════════════════════════════════
-let couponShown = false;
 function showCoupon() {
-  if (couponShown || localStorage.getItem("coup_shown")) return;
   document.getElementById("coupon-pop").classList.add("open");
-  couponShown = true;
 }
 function closeCoupon() {
   document.getElementById("coupon-pop").classList.remove("open");
-  localStorage.setItem("coup_shown", "1");
 }
 function submitCoupon() {
   const name = document.getElementById("coupName").value.trim();
   const phone = document.getElementById("coupPhone").value.trim();
-  if (!name || !phone) {
-    showToast("⚠️ يرجى تعبئة الاسم والرقم");
-    return;
-  }
+  if (!name || !phone) return showToast("من فضلك أدخل الاسم ورقم الهاتف");
   document.getElementById("coupForm").style.display = "none";
   document.getElementById("coupCode").classList.add("show");
-  // In production: send to Google Sheets / webhook
-  console.log("Lead captured:", { name, phone });
-  localStorage.setItem("coup_shown", "1");
+  showToast('<i class="fa-solid fa-gift" style="color:var(--go)"></i> تم إنشاء كود الخصم!');
 }
 function orderWithCoupon() {
-  const msg = "مرحبا 👋 أريد الطلب مع كود الخصم: WAHATA10";
-  openWA(msg);
+  const wa = branch === "zayed" ? WA_Z : WA_M;
+  const msg = "مرحباً، كود الخصم الخاص بي: WAHATA10 — أريد الطلب من " + (branch === "zayed" ? "فرع الشيخ زايد" : "فرع المهندسين");
+  window.open("https://wa.me/" + wa + "?text=" + encodeURIComponent(msg), "_blank");
   closeCoupon();
 }
+
+// Exit‑intent coupon
 function initExitIntent() {
+  let shown = false;
   document.addEventListener("mouseleave", (e) => {
-    if (e.clientY < 20 && !couponShown && !localStorage.getItem("coup_shown"))
-      showCoupon();
+    if (shown || e.clientY > 0 || !document.getElementById("home-pg").classList.contains("act")) return;
+    shown = true;
+    showCoupon();
   });
 }
 
 // ══════════════════════════════════════
-// OFFERS
+// COUNTERS
 // ══════════════════════════════════════
-function orderOfferWA(name, price) {
-  openWA(`مرحبا 👋\nأريد طلب:\n- ${name}\nالسعر: ${price} جنيه`);
+function animCounters() {
+  const els = document.querySelectorAll("[data-target]");
+  if (!els.length) return;
+  const obs = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          const el = e.target,
+            t = +el.dataset.target,
+            dur = 1800,
+            step = Math.max(1, Math.floor(t / 60));
+          let cur = 0;
+          const iv = setInterval(() => {
+            cur += step;
+            if (cur >= t) {
+              el.textContent = t;
+              clearInterval(iv);
+            } else el.textContent = cur;
+          }, dur / (t / step));
+          obs.unobserve(el);
+        }
+      });
+    },
+    { threshold: 0.5 },
+  );
+  els.forEach((el) => obs.observe(el));
 }
 
 // ══════════════════════════════════════
-// WHATSAPP
+// REVEAL ON SCROLL
 // ══════════════════════════════════════
-function orderWA(msg) {
-  openWA(msg || "مرحبا 👋 أريد الطلب من واحة اليمن");
+const ro = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) e.target.classList.add("visible");
+    });
+  },
+  { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+);
+function initReveal() {
+  document.querySelectorAll(".reveal").forEach((el) => ro.observe(el));
 }
-function openWA(msg, num) {
-  const n = num || (branch === "mohandessin" ? WA_M : WA_Z);
-  window.open(`https://wa.me/${n}?text=${encodeURIComponent(msg)}`, "_blank");
+function reObserve() {
+  document.querySelectorAll(".reveal:not(.visible)").forEach((el) => ro.observe(el));
+}
+
+// ══════════════════════════════════════
+// TOAST
+// ══════════════════════════════════════
+function showToast(msg) {
+  const t = document.getElementById("toast");
+  t.innerHTML = msg;
+  t.classList.add("show");
+  clearTimeout(t._t);
+  t._t = setTimeout(() => t.classList.remove("show"), 2600);
 }
 
 // ══════════════════════════════════════
@@ -1235,90 +1265,20 @@ function openWA(msg, num) {
 function openLB(src) {
   document.getElementById("lbImg").src = src;
   document.getElementById("lightbox").classList.add("open");
-  document.body.style.overflow = "hidden";
 }
 function closeLB() {
   document.getElementById("lightbox").classList.remove("open");
-  document.body.style.overflow = "";
 }
 
 // ══════════════════════════════════════
-// TOAST
-// ══════════════════════════════════════
-function showToast(msg) {
-  const t = document.getElementById("toast");
-  t.textContent = msg;
-  t.classList.add("show");
-  setTimeout(() => t.classList.remove("show"), 3200);
-}
-
-// ══════════════════════════════════════
-// REVEAL + COUNTERS
-// ══════════════════════════════════════
-let revObs;
-function initReveal() {
-  revObs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) {
-          e.target.classList.add("visible");
-          revObs.unobserve(e.target);
-        }
-      });
-    },
-    { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
-  );
-  document.querySelectorAll(".reveal").forEach((el) => revObs.observe(el));
-}
-function reObserve() {
-  document.querySelectorAll(".reveal:not(.visible)").forEach((el) => {
-    if (revObs) revObs.observe(el);
-  });
-}
-
-function animCounters() {
-  const obs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        if (!e.isIntersecting) return;
-        const el = e.target,
-          tgt = +el.dataset.target,
-          dur = 1800,
-          step = tgt / (dur / 16);
-        let cur = 0;
-        const tm = setInterval(() => {
-          cur += step;
-          if (cur >= tgt) {
-            cur = tgt;
-            clearInterval(tm);
-          }
-          el.textContent = Math.floor(cur).toLocaleString("ar-EG");
-        }, 16);
-        obs.unobserve(el);
-      });
-    },
-    { threshold: 0.5 },
-  );
-  document.querySelectorAll("[data-target]").forEach((el) => obs.observe(el));
-}
-
-// ══════════════════════════════════════
-// KEYBOARD
+// KEYBOARD SHORTCUTS
 // ══════════════════════════════════════
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     closeMod();
     closeLB();
-    closeCoupon();
-    if (document.getElementById("cartDrw").classList.contains("open"))
-      toggleCart();
+    toggleCart();
     if (document.getElementById("mobNav").classList.contains("open"))
       toggleMobNav();
   }
-});
-
-// ARIA: allow keyboard activation of cards
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && e.target.getAttribute("tabindex") === "0")
-    e.target.click();
 });

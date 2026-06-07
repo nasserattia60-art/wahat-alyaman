@@ -1,5 +1,4 @@
-
-      :root {
+:root {
         --br: #5c3317;
         --br-l: #7a4522;
         --br-d: #3d2110;
@@ -394,8 +393,18 @@
         box-shadow: var(--sh-m);
       }
       .branch-opt-icon {
-        font-size: 32px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--br), var(--br-l));
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-shrink: 0;
+      }
+      .branch-opt-icon i {
+        font-size: 20px;
+        color: var(--go);
       }
       .branch-opt-name {
         font-size: 18px;
@@ -794,6 +803,15 @@
           transparent
         );
       }
+      .hero-scroll span {
+        display: block;
+        margin-top: 4px;
+        animation: heroScrollBounce 2s ease-in-out infinite;
+      }
+      @keyframes heroScrollBounce {
+        0%, 100% { transform: translateY(0); opacity: 0.6; }
+        50% { transform: translateY(6px); opacity: 1; }
+      }
 
       /* ─── FOMO TICKER ─── */
       #fomo-ticker {
@@ -812,8 +830,9 @@
       .ticker-inner {
         display: flex;
         gap: 48px;
-        animation: tickerMove 30s linear infinite;
+        animation: tickerMove 40s linear infinite;
         white-space: nowrap;
+        width: max-content;
       }
       .ticker-item {
         display: flex;
@@ -824,12 +843,14 @@
         font-weight: 600;
         flex-shrink: 0;
       }
-      .ticker-dot {
-        width: 6px;
-        height: 6px;
-        background: var(--go);
-        border-radius: 50%;
+      .ticker-item i {
+        font-size: 12px;
+        color: var(--go);
         flex-shrink: 0;
+      }
+      .ticker-dot {
+        font-size: 6px;
+        color: var(--go);
       }
       @keyframes tickerMove {
         from {
@@ -897,9 +918,19 @@
         font-weight: 500;
       }
       .stat-icon {
-        font-size: 28px;
-        margin-bottom: 10px;
-        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--br), var(--br-l));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 14px;
+        box-shadow: 0 6px 20px rgba(92, 51, 23, 0.25);
+      }
+      .stat-icon i {
+        font-size: 22px;
+        color: var(--go);
       }
 
       /* ─── BEST SELLERS ─── */
@@ -986,8 +1017,10 @@
         align-items: center;
         gap: 5px;
       }
-      .pfomo-fire {
+      .pfomo-fire i {
+        color: #ff6b35;
         animation: pulse 1.2s infinite;
+        font-size: 13px;
       }
       .pcard-body {
         padding: 18px;
@@ -1245,9 +1278,18 @@
         z-index: 1;
       }
       .ccat-icon {
-        font-size: 34px;
+        font-size: 28px;
         margin-bottom: 9px;
         display: block;
+      }
+      .ccat-icon i {
+        font-size: 28px;
+        color: var(--go);
+        transition: var(--tr);
+      }
+      .ccat:hover .ccat-icon i,
+      .ccat.act .ccat-icon i {
+        color: #fff;
       }
       .ccat-name {
         font-size: 14px;
@@ -1421,6 +1463,10 @@
         font-size: 28px;
         box-shadow: 0 8px 24px rgba(92, 51, 23, 0.25);
       }
+      .why-icon i {
+        font-size: 28px;
+        color: var(--go);
+      }
       .why-title {
         font-size: 17px;
         font-weight: 800;
@@ -1500,9 +1546,21 @@
       .rhi {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
         font-size: 13px;
-        color: rgba(255, 255, 255, 0.78);
+        color: rgba(255, 255, 255, 0.85);
+      }
+      .rhi i {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: rgba(212, 164, 55, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: var(--go);
+        flex-shrink: 0;
       }
       .rev-grid {
         display: grid;
@@ -1678,16 +1736,20 @@
         align-items: flex-start;
       }
       .sfact-icon {
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
         background: rgba(212, 164, 55, 0.2);
+        border: 1px solid rgba(212, 164, 55, 0.3);
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 18px;
         flex-shrink: 0;
         margin-top: 2px;
+      }
+      .sfact-icon i {
+        font-size: 18px;
+        color: var(--go);
       }
       .sfact-title {
         font-size: 15px;
@@ -1793,10 +1855,9 @@
       .gitem:hover .gov {
         opacity: 1;
       }
-      .gov svg {
+      .gov i {
         color: #fff;
-        width: 28px;
-        height: 28px;
+        font-size: 28px;
       }
 
       /* ─── BRANCHES ─── */
@@ -1857,10 +1918,19 @@
         margin-bottom: 9px;
       }
       .brdet-icon {
-        color: var(--go);
-        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgba(212, 164, 55, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-shrink: 0;
-        margin-top: 3px;
+        margin-top: 1px;
+      }
+      .brdet-icon i {
+        font-size: 13px;
+        color: var(--go);
       }
       .brdet-txt {
         font-size: 13px;
@@ -2035,7 +2105,19 @@
         transform: translateY(-4px);
       }
       .cta-br-icon {
-        font-size: 26px;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: rgba(37, 211, 102, 0.2);
+        border: 1px solid rgba(37, 211, 102, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4px;
+      }
+      .cta-br-icon i {
+        font-size: 24px;
+        color: #25d366;
       }
       .cta-br-lbl {
         font-size: 11px;
@@ -2081,19 +2163,23 @@
         gap: 10px;
       }
       .soc-btn {
-        width: 36px;
-        height: 36px;
+        width: 38px;
+        height: 38px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.07);
         display: flex;
         align-items: center;
         justify-content: center;
         transition: var(--tr);
-        font-size: 15px;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.08);
       }
       .soc-btn:hover {
         background: var(--go);
-        transform: scale(1.1);
+        color: var(--br);
+        transform: scale(1.12) translateY(-2px);
+        border-color: var(--go);
       }
       .ft-col-t {
         font-size: 12px;
@@ -2126,10 +2212,18 @@
         gap: 9px;
       }
       .fc-icon {
-        color: var(--go);
-        font-size: 13px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: rgba(212, 164, 55, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-shrink: 0;
-        margin-top: 3px;
+      }
+      .fc-icon i {
+        font-size: 12px;
+        color: var(--go);
       }
       .fc-txt {
         font-size: 12px;
@@ -2328,8 +2422,15 @@
         color: var(--br);
         border-right-color: var(--go);
       }
-      .side-item-icon {
+      .side-item-icon i {
         font-size: 18px;
+        color: var(--go);
+        width: 24px;
+        text-align: center;
+      }
+      .side-item:hover .side-item-icon i,
+      .side-item.act .side-item-icon i {
+        color: var(--go-l);
       }
       .menu-main {
         flex: 1;
@@ -2349,6 +2450,10 @@
         display: flex;
         align-items: center;
         gap: 9px;
+      }
+      .menu-sec-t span i {
+        color: var(--go);
+        font-size: 20px;
       }
       .menu-grid {
         display: grid;
